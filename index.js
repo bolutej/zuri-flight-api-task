@@ -8,6 +8,10 @@ const app = express();
 
 app.use(json());
 
+// app.use("/", (req, res)=> {
+//   res.send({ "message": "Home route is working"})
+// })
+
 app.use("/", routes);
 
 const port = process.env.PORT || 3000;
